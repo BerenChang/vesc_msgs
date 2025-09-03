@@ -14,7 +14,14 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ThrottleBoard.msg"
-  "msg/Current.msg"
+  "msg/CurrentRel.msg"
+  "msg/RpmRel.msg"
+  "msg/EmergencyStop.msg"
+  "msg/CanStatus1Msg.msg"
+  "msg/CanStatus2Msg.msg"
+  "msg/CanStatus3Msg.msg"
+  "msg/CanStatus4Msg.msg"
+  "msg/CanStatus5Msg.msg"
 )
 
 if(BUILD_TESTING)
